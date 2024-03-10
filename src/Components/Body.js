@@ -16,7 +16,7 @@ const Body = () => {
   useEffect(() => {
     getrestaurants();
   }, []);
-
+console.log("Hello")
   async function getrestaurants() {
     const data = await fetch(
       "https://www.swiggy.com/mapi/homepage/getCards?lat=17.34766216348099&lng=78.54476273059845"
